@@ -5,6 +5,13 @@ const app = express();
 app.use(express.json());
 
 
-//app.use('/api').
+
+//Route Import
+const product= require("./routes/productRoutes");
+
+
+
+app.use('/api',product);
+
 
 module.exports = app;
